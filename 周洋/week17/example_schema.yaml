@@ -1,0 +1,17 @@
+index:
+  name: products
+  prefix: prod
+  storage_type: json
+
+fields:
+  - name: title
+    type: text
+  - name: category
+    type: tag
+  - name: price
+    type: numeric
+  - name: embedding
+    type: vector
+    algorithm: hnsw
+    dims: 768
+    distance_metric: cosine

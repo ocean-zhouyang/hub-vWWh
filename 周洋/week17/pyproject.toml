@@ -1,0 +1,17 @@
+[project]
+name = "redisvl"
+version = "0.1.0"
+description = "A crisp, friendly Redis vector search library"
+requires-python = ">=3.10"
+dependencies = [
+    "redis>=5.0,<8.0",
+    "numpy>=1.26.0",
+    "pyyaml>=5.4",
+]
+
+[project.scripts]
+rvl = "redisvl.cli:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
